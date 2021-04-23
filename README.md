@@ -7,7 +7,6 @@ Project Details;
 I used to :
 -MVVM 
 -State Management (MOBX)
--Easy Localization
 -Rest API
 
 
