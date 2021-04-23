@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furniture_app/core/theme/color_theme.dart';
 import 'package:furniture_app/core/widgets/add_item_to_bucket.dart';
 import 'package:furniture_app/core/widgets/score_product.dart';
 import 'package:kartal/kartal.dart';
@@ -10,14 +11,14 @@ class PostViewDetail extends StatelessWidget {
   final String? image;
   final String? title;
   final String? price;
+  final _renk = Helpercolor();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.grey,
+        backgroundColor: _renk.mavisim,
         title: Text('Detail Product'),
       ),
       body: Column(
@@ -41,7 +42,7 @@ class PostViewDetail extends StatelessWidget {
                     height: context.dynamicHeight(0.7),
                     width: context.dynamicWidth(1),
                     decoration: BoxDecoration(
-                        color: context.appTheme.buttonColor,
+                        color: _renk.gri,
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(40),
                           topRight: Radius.circular(40),
@@ -88,7 +89,7 @@ class PostViewDetail extends StatelessWidget {
                                   height: context.dynamicHeight(0.07),
                                   width: context.dynamicWidth(0.2),
                                   decoration: BoxDecoration(
-                                      color: Colors.grey,
+                                      color: Colors.grey.withOpacity(0.2),
                                       borderRadius:
                                           BorderRadiusDirectional.circular(20)),
                                   child: Icon(
@@ -99,7 +100,7 @@ class PostViewDetail extends StatelessWidget {
                                 height: context.dynamicHeight(0.07),
                                 width: context.dynamicWidth(0.7),
                                 decoration: BoxDecoration(
-                                    color: Colors.purple,
+                                    color: _renk.mavisim,
                                     borderRadius:
                                         BorderRadiusDirectional.circular(20)),
                                 child: Center(

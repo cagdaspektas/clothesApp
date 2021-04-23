@@ -3,7 +3,7 @@
 Container scoringproduct() {
     return Container(
                                 decoration: BoxDecoration(
-                                    color: Colors.purple,
+                                    color: Color(0xff494D7E),
                                     borderRadius:
                                         BorderRadiusDirectional.circular(20)),
                                 height: 50,

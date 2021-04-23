@@ -33,7 +33,7 @@ Row additemtobucket() {
           height: 50,
           width: 40,
           decoration: BoxDecoration(
-              color: Colors.purple,
+              color: Color(0xff494D7E),
               borderRadius: BorderRadiusDirectional.only(
                 bottomEnd: Radius.circular(10),
                 topEnd: Radius.circular(10),

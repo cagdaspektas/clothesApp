@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:dio/dio.dart';
 import 'package:furniture_app/feature/model/post_model.dart';
 import 'package:mobx/mobx.dart';
@@ -12,11 +11,14 @@ abstract class _PostViewModelBase with Store {
   List<Post> posts = [];
   final url = "https://fakestoreapi.com/products";
   @observable
-  bool isServiceRequestLoading = false;
+  bool isServiceRequestLoading = true;
   @observable
-  int item=0;
+  int item = 0;
+  @observable
+  int sayi = 0;
+
   @action
-   Future<void> fetchData() async {
+  Future<void> fetchData() async {
     dataChanged();
     final response = await Dio().get(url);
     if (response.statusCode == HttpStatus.ok) {
@@ -26,15 +28,20 @@ abstract class _PostViewModelBase with Store {
     }
     dataChanged();
   }
+
   @action
-   increment() {
+  increment() {
     item++;
-    
   }
-   @action
-   decrement() {
+
+  @action
+  inc() {
+    sayi++;
+  }
+
+  @action
+  decrement() {
     item--;
-    
   }
 
   @action

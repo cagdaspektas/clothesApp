@@ -29,7 +29,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   build_runner: ^1.12.2
-  
+  easy_localization: ^3.0.0
+  logger: ^1.0.0
   dio: ^4.0.0
   flutter_mobx: ^2.0.0
   http: ^0.13.1
