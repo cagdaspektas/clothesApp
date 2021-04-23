@@ -1,4 +1,4 @@
-# FURNİTURE APP
+# CLOTHES APP
 
 
 
